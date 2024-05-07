@@ -1,0 +1,52 @@
+<!-- /template]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]s/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IDA External Data Inventory</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/jquery.min.js"></script>  		
+    
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="message" class="message-class"></div>
+	<div class="header">
+		<table class="table2"><tr><td><img src="/static/axa-logo.png"/></td><td><h3>External Data Inventory</h3></td></tr></table>
+	</div>
+	
+	<div class="navigation">
+		<a href="#">Home</a>
+	    <!--<a href="#">Inventory List</a>-->
+	</div>	
+    <div class="sup" id="Id">
+		<a onclick="javascript:getTable('supplier');">Supplier  
+		</a>	
+	</div>		
+		
+	<div class="search-bar">
+	    <div id="suggestions-container">
+		    <ul id="suggestions"></ul>	
+		</div>	
+        <input type="text" id="search-item" placeholder="Search..." onkeyup="search()">
+    </div>
+
+	<!--<div class="tableOfContents">
+	<table>
+    <tr><th>User Navigation</th></tr>
+    <tr><td><a onclick="javascript:getTable('supplier');">Supplier</a></tr></td>    
+    </table>
+	</div> -->
+	
+	<div id="page" class="pagesize">  
+    </div>
+	
+	<script src="/static/tables.js"></script>
+	<script src="/static/script.js"></script>
+
+ 
+    <!--<script type="text/javascript">
+    </script>
+	<script src="/static/tables.js"></script> -->
+</body>
+</html>
+
